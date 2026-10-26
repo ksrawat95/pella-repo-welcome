@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Welcome to Pella India</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="stage" id="stage" aria-live="polite">
+  <section class="scene s-open" data-ms="9500">
+    <div class="mandala"></div>
+    <div class="logo has"><img alt="Pella logo" data-logo src="assets/logo.png"><span class="ph">PELLA</span></div>
+    <div class="namaste rise d1"><span class="hi" id="greet">नमस्ते</span><span class="en" id="greetLang">Hindi · Namaste</span></div>
+    <div class="kicker rise d2">स्वागत है &nbsp;•&nbsp; Swagat Hai &nbsp;•&nbsp; From all of us at Pella India</div>
+    <div class="big rise d3" id="wti" aria-label="Welcome to India">Welcome to India</div>
+    <div class="names rise d4"><img class="face" alt="" src="assets/face1.jpg"><span class="who"><b>Ben Lors &amp; Rebecca Hicks</b><small>Director of Technology &amp; Director, Salesforce Sales &amp; Service</small></span><img class="face" alt="" src="assets/face2.jpg"></div>
+    <div class="toran"></div><div class="rangoli l"></div><div class="rangoli r"></div><div class="tricolor"></div>
+  </section>
+  <section class="scene s-mid" data-ms="6000">
+    <div class="h2 rise d1">Welcome to Pella India</div>
+    <div class="sub rise d2">Great to have you with us.</div>
+    <div class="sub rise d3" style="font-style:italic;margin-top:1.2cqw">At Pella: we <b>care deeply</b>. We <b>learn continuously</b>. And we <b>achieve results</b> that go beyond.</div>
+    <div class="toran"></div><div class="rangoli l"></div><div class="rangoli r"></div><div class="tricolor"></div>
+  </section>
+  <section class="scene s-fun" data-ms="9000">
+    <div class="h2 rise d1">Say it like a local!</div>
+    <div class="sub rise d2">Six words to use during your visit</div>
+    <div class="cards">
+      <div class="card"><div class="hin">नमस्ते</div><div class="tr">Namaste</div><div class="mn">Hello</div></div>
+      <div class="card"><div class="hin">शुक्रिया</div><div class="tr">Shukriya</div><div class="mn">Thank you</div></div>
+      <div class="card"><div class="hin">चलो</div><div class="tr">Chalo!</div><div class="mn">Let’s go!</div></div>
+      <div class="card"><div class="hin">बहुत अच्छा</div><div class="tr">Bahut accha</div><div class="mn">Very good</div></div>
+      <div class="card"><div class="hin">चाय</div><div class="tr">Chai</div><div class="mn">Tea time!</div></div>
+      <div class="card"><div class="hin">जुगाड़</div><div class="tr">Jugaad</div><div class="mn">A clever quick fix</div></div>
+    </div>
+    <div class="toran"></div><div class="rangoli l"></div><div class="rangoli r"></div><div class="tricolor"></div>
+  </section>
+  <section class="scene s-team" data-ms="7000">
+    <div class="h2 rise d1">The Journey of Pella India</div>
+    <div class="sub rise d2">Moments from our events, celebrations and everyday teamwork — the people who built Pella India together.</div>
+    <div class="tiles" id="tiles"></div>
+    <div class="toran"></div><div class="rangoli l"></div><div class="rangoli r"></div><div class="tricolor"></div>
+  </section>
+  <section class="scene s-team" data-ms="7500">
+    <div class="h2 rise d1">More Moments, More Memories</div>
+    <div class="sub rise d2">Team time, activities and lots of smiles.</div>
+    <div class="tiles" id="tiles2"></div>
+    <div class="toran"></div><div class="rangoli l"></div><div class="rangoli r"></div><div class="tricolor"></div>
+  </section>
+  <section class="scene s-mid" data-ms="6500">
+    <div class="h2 rise d1">Time to Celebrate!</div>
+    <div class="feature rise d2"><img alt="Pella cake" src="assets/photos/cake.jpg"></div>
+    <div class="toran"></div><div class="rangoli l"></div><div class="rangoli r"></div><div class="tricolor"></div>
+  </section>
+  <section class="scene s-end" data-ms="7500">
+    <div class="mandala"></div>
+    <div class="logo has"><img alt="Pella logo" data-logo src="assets/logo.png"><span class="ph">PELLA</span></div>
+    <div class="big rise d1">Welcome to Pella India!</div>
+    <div class="names rise d2"><img class="face" alt="" src="assets/face1.jpg"><span class="who"><b>Ben Lors &amp; Rebecca Hicks</b><small>Director of Technology &amp; Director, Salesforce Sales &amp; Service</small></span><img class="face" alt="" src="assets/face2.jpg"></div>
+    <div class="kicker rise d3">आपका स्वागत है &nbsp;•&nbsp; Dhanyavaad for being here. We hope you have a wonderful stay.</div>
+    <div class="toran"></div><div class="rangoli l"></div><div class="rangoli r"></div><div class="tricolor"></div>
+  </section>
+</div>
+<div class="controls">
+  <button id="replay" type="button">Replay</button>
+  <button id="full" type="button">Full screen</button>
+  <button id="music" type="button" aria-pressed="false">♪ Music: tap to play</button>
+  <button id="msrc" type="button">Source: Raag Yaman (bansuri)</button>
+  <label class="btn">Add Pella logo (PNG/SVG)<input type="file" id="logoIn" accept="image/png,image/svg+xml,image/jpeg"></label>
+  <label class="btn">Add team photos<input type="file" id="photoIn" accept="image/*" multiple></label>
+</div>
+<div class="hint">Tip: click or tap the slide for a confetti burst!</div>
+<audio id="bgm" preload="auto" loop></audio>
+<script src="app.js"></script>
+</body>
+</html>
